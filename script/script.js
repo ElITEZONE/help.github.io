@@ -4,11 +4,11 @@
         const screenWidth = window.screen.width;
 
         const video = document.querySelector('.video')
-        const mql = window.matchMedia("(orientation: portrait)");
-        console.log(mql.matches)
+        var mql = window.matchMedia("(orientation: portrait)");
         if(mql.matches) {
-            console.log(mql.matches)
-            video.innerHTML = `<iframe src="https://player.vimeo.com/video/720551923?h=43d16fe513&amp;badge=0&amp;autoplay=1&amp;muted=1&amp;player_id=0&amp;app_id=58479&amp;background=1" width="600" height="1200" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="heiming_aben_commercial_#1 (Original)_1.mp4"></iframe>  `	
+            console.log(2)
+        } else {
+            console.log(1)
         }
             if(screenWidth <= 543) {
                 video.innerHTML = `<iframe src="https://player.vimeo.com/video/720551923?h=43d16fe513&amp;badge=0&amp;autoplay=1&amp;muted=1&amp;player_id=0&amp;app_id=58479&amp;background=1" width="600" height="1200" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="heiming_aben_commercial_#1 (Original)_1.mp4"></iframe>  `	
