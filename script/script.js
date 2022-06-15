@@ -23,3 +23,7 @@
             }
 
         })
+
+window.addEventListener('orientationchange', () => {
+   alert('change')
+})
